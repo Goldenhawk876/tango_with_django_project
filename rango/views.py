@@ -27,7 +27,7 @@ def index(request):
 def about(request):
     context_dict = {'boldmessage': 'Crunchy, creamy, cookie, candy, cupcake!'}
     return render(request, 'rango/about.html', context=context_dict)
-    return HttpResponse("Rango says here is the about page. <a href=\'/rango/\'>Index</a>")
+    
 
 def show_category(request, category_name_slug):
     # Create a context dictionary which we can pass
